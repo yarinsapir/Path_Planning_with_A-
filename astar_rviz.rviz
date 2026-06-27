@@ -1,0 +1,24 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Displays:
+    - Alpha: 0.7
+      Class: rviz_default_plugins/Map
+      Name: OccupancyGrid
+      Topic:
+        Value: /map
+    - Class: rviz_default_plugins/Path
+      Color: 0; 200; 50
+      Name: PlannedPath
+      Topic:
+        Value: /planned_path
+    - Class: rviz_default_plugins/MarkerArray
+      Name: AStarMarkers
+      Topic:
+        Value: /astar_markers
+  Global Options:
+    Fixed Frame: map
+  Name: root
